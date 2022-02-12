@@ -1,7 +1,36 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+@import url(https://fonts.google.com/specimen/Space+Mono);
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  height: 100vh;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+h3 {
+  color: grey;
+}
+
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  width: 75%;
+  min-height: 25%;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.input-section {
+  background-color: hsl(189, 41%, 97%);
+}
+
+.input {
+  font-size: 24px;
+}
+
+.bill-input,
+.person-input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
 }
