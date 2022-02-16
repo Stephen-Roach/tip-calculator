@@ -16,7 +16,8 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="left-conatiner">
+      <!-- left-container -->
+      <div class="left-container">
         <div class="bill-container">
           <h3>Bill</h3>
           <div class="input-section">
@@ -26,13 +27,17 @@
         </div>
         <div class="tip-container">
           <h3>Select Tip %</h3>
-
-          <button class="btn btn-5">5%</button>
-          <button class="btn btn-10">10%</button>
-          <button class="btn btn-15">15%</button>
-          <button class="btn btn-20">20%</button>
-          <button class="btn btn-25">25%</button>
-          <button class="btn btn-customer">Custom</button>
+          <div class="top-buttons">
+            <button class="btn btn-5">5%</button>
+            <button class="btn btn-10">10%</button>
+            <button class="btn btn-15">15%</button>
+          </div>
+          <div class="bottom-buttons">
+            <button class="btn btn-25">25%</button>
+            <button class="btn btn-50">50%</button>
+            <!-- <button class="btn btn-customer">Custom</button> -->
+            <input class="custom-input" type="number" placeholder="Custom" />
+          </div>
         </div>
         <div class="people-container">
           <h3>Number of People</h3>
@@ -43,11 +48,24 @@
         </div>
       </div>
 
+      <!--right-conatiner-->
       <div class="right-conatiner">
-        <div class="tip-amount-container">Tip Amount / person</div>
+        <div class="tip-amount-container">
+          <div class="tip-amount-text">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="tip-amount-number">$0.00</div>
+        </div>
 
-        <div class="total-container">Total / person</div>
-        <button class="reset-btn" type="reset">Reset</button>
+        <div class="total-amount-container">
+          <div class="total-amount-text">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="total-amount-number">$0.00</div>
+        </div>
+        <button class="reset-btn" type="reset" disabled>Reset</button>
       </div>
     </div>
   </body>
